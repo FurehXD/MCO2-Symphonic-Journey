@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\Level.cpp(31,31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Game\Game.cpp(87,40): warning C4018: '<=': signed/unsigned mismatch
+  MCO2 Symphonic Journey.vcxproj -> C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Debug\MCO2 Symphonic Journey.exe
