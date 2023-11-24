@@ -7,6 +7,7 @@
 #include "../Level/LevelOne/LevelOne.h"
 #include "../Level/LevelTwo/LevelTwo.h"
 #include "../Level/LevelThree/LevelThree.h"
+#include "../Level/LevelFour/LevelFour.h"
 #include "../Player/Player.h"
 #include "../Wall/Wall.h"
 #include "iostream"
@@ -18,7 +19,7 @@ class Game
     private:
         std::vector<std::unique_ptr<Level>> levels;
         Player player;
-        int currentLevelndex;
+        int currentLevelIndex;
         sf::Clock clock;
 
       

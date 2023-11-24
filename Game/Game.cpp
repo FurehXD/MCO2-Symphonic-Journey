@@ -5,7 +5,8 @@ Game::Game()
     this->levels.push_back(std::make_unique<LevelOne>());
     this->levels.push_back(std::make_unique<LevelTwo>());
     this->levels.push_back(std::make_unique<LevelThree>());
-    this->currentLevelndex = 2;
+    this->levels.push_back(std::make_unique<LevelFour>());
+    this->currentLevelIndex = 3;
 }
 
 void Game::startGame() 
@@ -16,9 +17,9 @@ void Game::startGame()
     this->initialize();
     sf::RenderWindow window(sf::VideoMode(1280, 720), "SFML works!");
     while(window.isOpen())
-    {      
+    {     
+        this->update();
         this->display(window);
-        this->update();         
     }
 }
 
@@ -31,52 +32,64 @@ void Game::display(sf::RenderWindow& window)
 {
     
     window.clear();
-    auto& drawables = this->levels[currentLevelndex]->getDrawables();
-    for (auto& drawable : drawables) 
+    if (this->currentLevelIndex < levels.size() && levels[this->currentLevelIndex])
     {
-        window.draw(*drawable);
+        auto& drawables = levels[this->currentLevelIndex]->getDrawables();
+        for (auto& drawable : drawables)
+        {
+            if (drawable) // This check is redundant if you are sure that all drawables are valid
+            {
+                window.draw(*drawable);
+            }
+        }
     }
     window.display();
 }
 
 
 void Game::update()
-{   
+{
     sf::Time deltaTime = clock.restart();
     this->player.handleInput(deltaTime);
-    this->levels[this->currentLevelndex]->updatePlayerDrawable(this->player);
 
-    auto& collidables = this->levels[currentLevelndex]->getCollidables();
-
-    for (size_t i = 0; i < collidables.size(); ++i) 
+    // Check if the current level index is valid before updating the player drawable
+    if (this->currentLevelIndex >= 0 && this->currentLevelIndex < levels.size() && levels[this->currentLevelIndex]) 
     {
-        for (size_t j = i + 1; j < collidables.size(); ++j) 
+        this->levels[currentLevelIndex]->updatePlayerDrawable(this->player);
+
+        auto& collidables = this->levels[currentLevelIndex]->getCollidables();
+
+        for (size_t i = 0; i < collidables.size(); ++i) 
         {
-            if (checkCollision(*collidables[i], player)) 
+            
+            if (checkCollision(*collidables[i], this->player)) 
             {
-                
                 this->player.onCollision(*collidables[i]);
             }
         }
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
-        changeLevel(0);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
-        changeLevel(1);
 
-
-    if (this->player.getNotesTaken() == this->levels[this->currentLevelndex]->getNoteAmount())
-    {
-        this->currentLevelndex++;
-        if (this->currentLevelndex < 4)
+        // Handling level completion and transition
+        if (this->player.getNotesTaken() == this->levels[currentLevelIndex]->getNoteAmount())
         {
-            this->player.setNotesTaken(0);
-            changeLevel(this->currentLevelndex);
+            std::cout << "LEVEL INDEX: " << this->currentLevelIndex << std::endl;
+            if (this->currentLevelIndex < levels.size() - 1)
+            {
+                this->player.setNotesTaken(0);
+                changeLevel(this->currentLevelIndex + 1); // Go to the next level
+            }
+            else
+            {
+                std::cout << "PLAYER WINS!" << std::endl;
+                // Handle the win condition
+            }
         }
-        else
-            std::cout << "PLAYER WINS!" << std::endl;
+    }
+    else 
+    {
+        //If not a valid level
     }
 }
+
 
 bool Game::checkCollision(Collidable& objectA, Collidable& objectB)
 {
@@ -85,7 +98,14 @@ bool Game::checkCollision(Collidable& objectA, Collidable& objectB)
 
 void Game::changeLevel(int levelIndex)
 {
-    this->currentLevelndex = levelIndex;
+    if (levelIndex >= 0 && levelIndex < levels.size() && levels[levelIndex])
+    {
+        this->currentLevelIndex = levelIndex;
+    }
+    else
+    {
+        // Handle the error, perhaps setting it to a default level or displaying a message
+    }
 }
 
 

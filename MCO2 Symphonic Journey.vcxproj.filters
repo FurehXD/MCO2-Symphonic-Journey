@@ -51,6 +51,9 @@
     <ClCompile Include="Level\LevelThree\LevelThree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level\LevelFour\LevelFour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -87,6 +90,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Level\LevelThree\LevelThree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelFour\LevelFour.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

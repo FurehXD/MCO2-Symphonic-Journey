@@ -134,14 +134,3 @@ std::vector<Collidable*>& LevelOne::getCollidables()
     return this->vecCollidables;
 }
 
-bool LevelOne::isSpaceFree(sf::FloatRect& bounds)
-{
-    for (auto& collidable : this->vecCollidables)
-    {
-        if (collidable->getBounds().intersects(bounds))
-        {
-            return false; 
-        }
-    }
-    return true; 
-}

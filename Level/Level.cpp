@@ -14,3 +14,15 @@ int Level::getBorderAmount()
 {
 	return this->borderAmount;
 }
+
+bool Level::isSpaceFree(sf::FloatRect& bounds)
+{
+    for (auto& collidable : this->vecCollidables)
+    {
+        if (collidable->getBounds().intersects(bounds))
+        {
+            return false;
+        }
+    }
+    return true;
+}

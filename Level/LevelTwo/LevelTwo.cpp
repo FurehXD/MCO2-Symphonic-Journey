@@ -141,14 +141,3 @@ std::vector<Collidable*>& LevelTwo::getCollidables()
     return this->vecCollidables;
 }
 
-bool LevelTwo::isSpaceFree(sf::FloatRect& bounds) 
-{
-    for (auto& collidable : this->vecCollidables) 
-    {
-        if (collidable->getBounds().intersects(bounds)) 
-        {
-            return false; // Space is not free
-        }
-    }
-    return true; // Space is free
-}

@@ -13,6 +13,16 @@ class Level
 	protected:
 		std::vector<sf::Drawable*> vecDrawables;
 		std::vector<Collidable*> vecCollidables;
+		std::vector<Notes> vecNotes;
+		std::vector<Border> vecBorders;
+
+		sf::RectangleShape spTopWall;
+		sf::RectangleShape spBotWall;
+		sf::RectangleShape spLeftWall;
+		sf::RectangleShape spRightWall;
+
+		sf::CircleShape playerShape;
+
 		int noteAmount;
 		int borderAmount;
 
@@ -25,6 +35,8 @@ class Level
 		virtual void spawnBorders(int amount) = 0;
 		virtual int getNoteAmount();
 		virtual int getBorderAmount();
+		virtual bool isSpaceFree(sf::FloatRect& bounds);
+
 };
 
 
