@@ -53,7 +53,7 @@ void LevelOne::spawnNotes(int amount)
 
     std::uniform_int_distribution<> disX(0, 1280);
     std::uniform_int_distribution<> disY(0, 720);
-    std::uniform_int_distribution<> disType(0, 1); // 0 for Notes, 1 for FullNotes
+    std::uniform_int_distribution<> disType(0, 0); // 0 for Notes, 1 for FullNotes
 
     for (int i = 0; i < amount; i++) {
         float x, y;
@@ -69,10 +69,7 @@ void LevelOne::spawnNotes(int amount)
             {
                 case 0:
                     note = new Notes();
-                    break;
-                case 1:
-                    note = new FullNote();
-                    break;
+                    break;      
             }
 
             if (note) 

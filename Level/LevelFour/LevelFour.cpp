@@ -4,7 +4,7 @@
 
 LevelFour::LevelFour()
 {
-    this->noteAmount = 1;
+    this->noteAmount = 35;
     this->borderAmount = 15;
 
     this->spLeftWall.setSize(sf::Vector2f(720, 10));

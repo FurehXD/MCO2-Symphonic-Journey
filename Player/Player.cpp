@@ -52,7 +52,7 @@ void Player::onCollision(Collidable& object)
     Border* border = dynamic_cast<Border*>(&object);
     if (note)
     {
-        note->setNotePos(0, 0); //Temp need to create delete functionality
+        note->setNotePos(-1000, -1000); //Temp need to create delete functionality
         this->score += note->getScoreValue(); //Set score
         this->notesTaken++; //Set Notes Taken
         std::cout << "Score: " << this->score << std::endl;

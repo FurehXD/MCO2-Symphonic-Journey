@@ -2,11 +2,7 @@
 
 Game::Game()
 {
-    this->levels.push_back(std::make_unique<LevelOne>());
-    this->levels.push_back(std::make_unique<LevelTwo>());
-    this->levels.push_back(std::make_unique<LevelThree>());
-    this->levels.push_back(std::make_unique<LevelFour>());
-    this->currentLevelIndex = 3;
+    
 }
 
 void Game::startGame() 
@@ -25,7 +21,11 @@ void Game::startGame()
 
 void Game::initialize()
 {
-     
+    this->levels.push_back(std::make_unique<LevelOne>());
+    this->levels.push_back(std::make_unique<LevelTwo>());
+    this->levels.push_back(std::make_unique<LevelThree>());
+    this->levels.push_back(std::make_unique<LevelFour>());
+    this->currentLevelIndex = 0;
 }
 
 void Game::display(sf::RenderWindow& window)
@@ -61,7 +61,6 @@ void Game::update()
 
         for (size_t i = 0; i < collidables.size(); ++i) 
         {
-            
             if (checkCollision(*collidables[i], this->player)) 
             {
                 this->player.onCollision(*collidables[i]);

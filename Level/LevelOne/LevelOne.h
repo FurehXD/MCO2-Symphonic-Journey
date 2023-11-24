@@ -6,8 +6,8 @@
 #include "vector"
 #include "../Level.h"
 #include "../../Player/Player.h"
-#include "../../Notes/Notes.h"
 #include "../../Notes/FullNote/FullNote.h"
+#include "../../Notes/HalfNote/HalfNote.h"
 #include "../../Border/Border.h"
 #include <random>
 

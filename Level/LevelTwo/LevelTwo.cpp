@@ -55,7 +55,7 @@ void LevelTwo::spawnNotes(int amount)
 
     std::uniform_int_distribution<> disX(0, 1280);
     std::uniform_int_distribution<> disY(0, 720);
-    std::uniform_int_distribution<> disType(0, 2); // 0 for Notes, 1 for FullNotes, 2 for HalfNote
+    std::uniform_int_distribution<> disType(0, 1); // 0 for Notes, 1 for FullNotes, 2 for HalfNote
 
     for (int i = 0; i < amount; i++) {
         float x, y;
@@ -76,9 +76,7 @@ void LevelTwo::spawnNotes(int amount)
             case 1:
                 note = new FullNote();
                 break;
-            case 2:
-                note = new HalfNote(); 
-                break;
+            
             }
 
             if (note) {
