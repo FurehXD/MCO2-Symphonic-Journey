@@ -18,6 +18,7 @@ class Player : public Collidable
         sf::Vector2f velocity;
         sf::Vector2f acceleration;
         int score;
+        int notesTaken;
 
 
     public:
@@ -30,6 +31,8 @@ class Player : public Collidable
         void setPlayerPos(sf::Vector2f& newPos);
         void onCollision(Collidable& object) override;
         sf::FloatRect getBounds() override;
+        int getNotesTaken();
+        void setNotesTaken(int amount);
        
 
 };

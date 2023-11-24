@@ -5,11 +5,12 @@ Level::Level()
 	
 }
 
-
-void Level::addDrawable(sf::Drawable* drawable)
+int Level::getNoteAmount()
 {
-	this->vecDrawables.push_back(drawable);
+	return this->noteAmount;
 }
 
-
-
+int Level::getBorderAmount()
+{
+	return this->borderAmount;
+}

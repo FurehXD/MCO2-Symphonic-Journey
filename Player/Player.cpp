@@ -53,8 +53,10 @@ void Player::onCollision(Collidable& object)
     if (note)
     {
         note->setNotePos(0, 0); //Temp need to create delete functionality
-        this->score += note->getScoreValue();
+        this->score += note->getScoreValue(); //Set score
+        this->notesTaken++; //Set Notes Taken
         std::cout << "Score: " << this->score << std::endl;
+        std::cout << "Notes Taken: " << this->notesTaken << std::endl;
     }
     if (border)
     {
@@ -111,6 +113,16 @@ void Player::onCollision(Collidable& object)
 sf::FloatRect Player::getBounds()
 {
     return this->playerShape.getGlobalBounds();
+}
+
+int Player::getNotesTaken()
+{
+    return this->notesTaken;
+}
+
+void Player::setNotesTaken(int amount)
+{
+    this->notesTaken = amount;
 }
 
                 

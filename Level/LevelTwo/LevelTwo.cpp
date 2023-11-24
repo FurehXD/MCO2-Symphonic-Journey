@@ -1,28 +1,29 @@
-#include "LevelOne.h"
+#include "LevelTwo.h"
 
-LevelOne::LevelOne()
+
+
+LevelTwo::LevelTwo()
 {
-    this->noteAmount = 10;
-    this->borderAmount = 5;
+    this->noteAmount = 15;
+    this->borderAmount = 15;
 
     this->spLeftWall.setSize(sf::Vector2f(720, 10));
     this->spLeftWall.setPosition(5.0f, 0.0f);
     this->spLeftWall.setRotation(90);
-    this->spLeftWall.setFillColor(sf::Color::Blue);
+    this->spLeftWall.setFillColor(sf::Color::Red);
 
     this->spRightWall.setSize(sf::Vector2f(720, 5));
     this->spRightWall.setPosition(1280.0f, 0.0f);
     this->spRightWall.setRotation(90);
-    this->spRightWall.setFillColor(sf::Color::Blue);
+    this->spRightWall.setFillColor(sf::Color::Red);
 
     this->spTopWall.setSize(sf::Vector2f(1280, 5));
     this->spTopWall.setPosition(5.0f, 0.0f);
-    this->spTopWall.setFillColor(sf::Color::Blue);
+    this->spTopWall.setFillColor(sf::Color::Red);
 
     this->spBotWall.setSize(sf::Vector2f(1280, 5));
     this->spBotWall.setPosition(0.0f, 715.0f);
-    this->spBotWall.setFillColor(sf::Color::Blue);
-    
+    this->spBotWall.setFillColor(sf::Color::Red);
 
     this->vecDrawables.push_back(&this->spLeftWall);
     this->vecDrawables.push_back(&this->spRightWall);
@@ -33,20 +34,20 @@ LevelOne::LevelOne()
 
     this->spawnNotes(this->noteAmount);
     this->spawnBorders(this->borderAmount);
-    
+
 }
 
-void LevelOne::updatePlayerDrawable(Player& player)
+void LevelTwo::updatePlayerDrawable(Player& player)
 {
     this->playerShape = player.getShape();
     this->playerShape.setPosition(player.getPlayerPos());
 }
-std::vector<sf::Drawable*>& LevelOne::getDrawables()
+std::vector<sf::Drawable*>& LevelTwo::getDrawables()
 {
     return this->vecDrawables;
 }
 
-void LevelOne::spawnNotes(int amount)
+void LevelTwo::spawnNotes(int amount)
 {
     // Random number generator
     std::random_device rd;
@@ -54,7 +55,7 @@ void LevelOne::spawnNotes(int amount)
 
     std::uniform_int_distribution<> disX(0, 1280);
     std::uniform_int_distribution<> disY(0, 720);
-    std::uniform_int_distribution<> disType(0, 1);
+    std::uniform_int_distribution<> disType(0, 1); 
 
     for (int i = 0; i < amount; ++i)
     {
@@ -80,7 +81,7 @@ void LevelOne::spawnNotes(int amount)
     }
 }
 
-void LevelOne::spawnBorders(int amount)
+void LevelTwo::spawnBorders(int amount)
 {
     // Random number generator
     std::random_device rd;
@@ -103,7 +104,7 @@ void LevelOne::spawnBorders(int amount)
     }
 }
 
-std::vector<Collidable*>& LevelOne::getCollidables()
+std::vector<Collidable*>& LevelTwo::getCollidables()
 {
     return this->vecCollidables;
 }

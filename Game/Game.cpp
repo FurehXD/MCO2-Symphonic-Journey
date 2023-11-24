@@ -3,12 +3,12 @@
 Game::Game()
 {
     this->levels.push_back(std::make_unique<LevelOne>());
+    this->levels.push_back(std::make_unique<LevelTwo>());
     this->currentLevelndex = 0;
 }
 
 void Game::startGame() 
 {
-    
     std::cout << "Welcome to the Symphonic Journey!" << std::endl;
     std::cout <<  std::endl;
 
@@ -58,10 +58,33 @@ void Game::update()
             }
         }
     }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+        changeLevel(0);
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
+        changeLevel(1);
+
+
+    if (this->player.getNotesTaken() == this->levels[this->currentLevelndex]->getNoteAmount() - 1)
+    {
+        if (this->currentLevelndex < 4)
+        {
+            this->player.setNotesTaken(0);
+            changeLevel(1);
+        }
+        else
+            std::cout << "PLAYER WINS!" << std::endl;
+    }
 }
 
 bool Game::checkCollision(Collidable& objectA, Collidable& objectB)
 {
     return objectA.getBounds().intersects(objectB.getBounds());
 }
+
+void Game::changeLevel(int levelIndex)
+{
+    this->currentLevelndex = levelIndex;
+}
+
+
 

@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Border\Border.cpp" />
+    <ClCompile Include="Level\LevelTwo\LevelTwo.cpp" />
     <ClCompile Include="Utilities\Collision\Collidable.cpp" />
     <ClCompile Include="Notes\HalfNote\HalfNote.cpp" />
     <ClCompile Include="Notes\FullNote\FullNote.cpp" />
@@ -163,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Border\Border.h" />
+    <ClInclude Include="Level\LevelTwo\LevelTwo.h" />
     <ClInclude Include="Utilities\Collision\Collidable.h" />
     <ClInclude Include="Notes\HalfNote\HalfNote.h" />
     <ClInclude Include="Notes\FullNote\FullNote.h" />

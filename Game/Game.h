@@ -5,6 +5,7 @@
 #include "../Utilities/Collision/Collidable.h"
 #include "../Level/Level.h"
 #include "../Level/LevelOne/LevelOne.h"
+#include "../Level/LevelTwo/LevelTwo.h"
 #include "../Player/Player.h"
 #include "../Wall/Wall.h"
 #include "iostream"
@@ -15,7 +16,6 @@ class Game
 {
     private:
         std::vector<std::unique_ptr<Level>> levels;
-        LevelOne levelOne;
         Player player;
         int currentLevelndex;
         sf::Clock clock;
@@ -30,6 +30,7 @@ class Game
         void display(sf::RenderWindow& window);
         void update();
         bool checkCollision(Collidable& objectA, Collidable& objectB);
+        void changeLevel(int levelIndex);
                
 };
 
