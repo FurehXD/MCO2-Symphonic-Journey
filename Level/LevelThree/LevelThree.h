@@ -1,5 +1,5 @@
-#ifndef LEVEL_TWO_H
-#define LEVEL_TWO_H
+#ifndef LEVEL_THREE_H
+#define LEVEL_THREE_H
 
 #include "iostream" 
 #include "string"
@@ -14,7 +14,7 @@
 #include <random>
 
 
-class LevelTwo : public Level
+class LevelThree : public Level
 {
 private:
     //Player shape
@@ -31,7 +31,7 @@ private:
 
 
 public:
-    LevelTwo();
+    LevelThree();
 
     void updatePlayerDrawable(Player& player) override;
     std::vector<sf::Drawable*>& getDrawables() override;
@@ -39,6 +39,8 @@ public:
     void spawnBorders(int amount) override;
     std::vector<Collidable*>& getCollidables() override;
     bool isSpaceFree(sf::FloatRect& bounds);
+
+
 };
 
 #endif

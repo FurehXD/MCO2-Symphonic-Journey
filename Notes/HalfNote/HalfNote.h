@@ -5,7 +5,8 @@
 
 class HalfNote : public Notes
 {
-
+	public:
+		HalfNote();
 };
 
 

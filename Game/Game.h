@@ -6,6 +6,7 @@
 #include "../Level/Level.h"
 #include "../Level/LevelOne/LevelOne.h"
 #include "../Level/LevelTwo/LevelTwo.h"
+#include "../Level/LevelThree/LevelThree.h"
 #include "../Player/Player.h"
 #include "../Wall/Wall.h"
 #include "iostream"

@@ -1,5 +1,5 @@
-#ifndef NOTES_FULL_NOTES_H
-#define NOTES_FULL_NOTES_H
+#ifndef NOTES_FULL_NOTE_H
+#define NOTES_FULL_NOTE_H
 
 #include "../Notes.h"
 

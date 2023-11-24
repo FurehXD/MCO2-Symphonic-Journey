@@ -3,7 +3,7 @@
 FullNote::FullNote()
 {
 	this->ntCircle.setFillColor(sf::Color::Magenta);
-	this->scoreValue = 10;
+	this->scoreValue = 20;
 }
 
 

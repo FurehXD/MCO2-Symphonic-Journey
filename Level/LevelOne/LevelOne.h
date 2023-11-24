@@ -33,8 +33,8 @@ class LevelOne : public Level
 
         void updatePlayerDrawable(Player& player) override;
         std::vector<sf::Drawable*>& getDrawables() override;
-        void spawnNotes(int amount);
-        void spawnBorders(int amount);
+        void spawnNotes(int amount) override;
+        void spawnBorders(int amount) override;
         std::vector<Collidable*>& getCollidables() override;
         bool isSpaceFree(sf::FloatRect& bounds);
 

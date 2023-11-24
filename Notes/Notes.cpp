@@ -35,10 +35,7 @@ sf::FloatRect Notes::getBounds()
 	return this->ntCircle.getGlobalBounds();
 }
 
-void Notes::startFollow(Collidable& object)
-{
-	
-}
+
 
 int Notes::getScoreValue()
 {

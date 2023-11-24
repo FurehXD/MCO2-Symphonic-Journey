@@ -4,7 +4,7 @@
 
 LevelTwo::LevelTwo()
 {
-    this->noteAmount = 15;
+    this->noteAmount = 30;
     this->borderAmount = 15;
 
     this->spLeftWall.setSize(sf::Vector2f(720, 10));
@@ -55,28 +55,44 @@ void LevelTwo::spawnNotes(int amount)
 
     std::uniform_int_distribution<> disX(0, 1280);
     std::uniform_int_distribution<> disY(0, 720);
-    std::uniform_int_distribution<> disType(0, 1); 
+    std::uniform_int_distribution<> disType(0, 2); // 0 for Notes, 1 for FullNotes, 2 for HalfNote
 
     for (int i = 0; i < amount; i++) {
         float x, y;
         sf::FloatRect bounds;
         bool spaceFree = false;
 
-        while (!spaceFree) {
+        while (!spaceFree) 
+        {
             x = disX(gen);
             y = disY(gen);
 
-            Notes* note = disType(gen) == 0 ? static_cast<Notes*>(new Notes()) : static_cast<Notes*>(new FullNote());
-            note->setNotePos(x, y);
-            bounds = note->getBounds();
-
-            spaceFree = isSpaceFree(bounds);
-            if (spaceFree) {
-                this->vecDrawables.push_back(&note->getShape());
-                this->vecCollidables.push_back(note);
+            Notes* note = nullptr;
+            switch (disType(gen)) 
+            {
+            case 0:
+                note = new Notes();
+                break;
+            case 1:
+                note = new FullNote();
+                break;
+            case 2:
+                note = new HalfNote(); 
+                break;
             }
-            else {
-                delete note; 
+
+            if (note) {
+                note->setNotePos(x, y);
+                bounds = note->getBounds();
+
+                spaceFree = isSpaceFree(bounds);
+                if (spaceFree) {
+                    this->vecDrawables.push_back(&note->getShape());
+                    this->vecCollidables.push_back(note);
+                }
+                else {
+                    delete note; // Clean up if space is not free
+                }
             }
         }
     }
@@ -91,12 +107,14 @@ void LevelTwo::spawnBorders(int amount)
     std::uniform_int_distribution<> disX(0, 1280);
     std::uniform_int_distribution<> disY(0, 720);
 
-    for (int i = 0; i < amount; ++i) {
+    for (int i = 0; i < amount; ++i) 
+    {
         float x, y;
         sf::FloatRect bounds;
         bool spaceFree = false;
 
-        while (!spaceFree) {
+        while (!spaceFree) 
+        {
             x = disX(gen);
             y = disY(gen);
 
@@ -105,11 +123,13 @@ void LevelTwo::spawnBorders(int amount)
             bounds = border->getBounds();
 
             spaceFree = isSpaceFree(bounds);
-            if (spaceFree) {
+            if (spaceFree) 
+            {
                 this->vecDrawables.push_back(&border->getShape());
                 this->vecCollidables.push_back(border);
             }
-            else {
+            else
+            {
                 delete border; 
             }
         }

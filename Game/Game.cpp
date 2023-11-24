@@ -4,7 +4,8 @@ Game::Game()
 {
     this->levels.push_back(std::make_unique<LevelOne>());
     this->levels.push_back(std::make_unique<LevelTwo>());
-    this->currentLevelndex = 0;
+    this->levels.push_back(std::make_unique<LevelThree>());
+    this->currentLevelndex = 2;
 }
 
 void Game::startGame() 
@@ -66,10 +67,11 @@ void Game::update()
 
     if (this->player.getNotesTaken() == this->levels[this->currentLevelndex]->getNoteAmount())
     {
+        this->currentLevelndex++;
         if (this->currentLevelndex < 4)
         {
             this->player.setNotesTaken(0);
-            changeLevel(1);
+            changeLevel(this->currentLevelndex);
         }
         else
             std::cout << "PLAYER WINS!" << std::endl;

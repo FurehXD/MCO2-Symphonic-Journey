@@ -45,6 +45,12 @@
     <ClCompile Include="Level\LevelTwo\LevelTwo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Notes\QuarterNote\QuarterNote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelThree\LevelThree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -75,6 +81,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Level\LevelTwo\LevelTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Notes\QuarterNote\QuarterNote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelThree\LevelThree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

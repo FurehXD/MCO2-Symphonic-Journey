@@ -21,6 +21,8 @@ class Level
 		virtual std::vector<sf::Drawable*>& getDrawables() = 0;
 		virtual void updatePlayerDrawable(Player& player) = 0;
 		virtual std::vector<Collidable*>& getCollidables() = 0;
+		virtual void spawnNotes(int amount) = 0;
+		virtual void spawnBorders(int amount) = 0;
 		virtual int getNoteAmount();
 		virtual int getBorderAmount();
 };

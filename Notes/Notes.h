@@ -21,7 +21,6 @@ class Notes : public Collidable
 		void setNotePos(float x, float y);
 		void onCollision(Collidable& object) override;
 		sf::FloatRect getBounds() override;
-		void startFollow(Collidable& object);
 		virtual int getScoreValue();
 		
 
