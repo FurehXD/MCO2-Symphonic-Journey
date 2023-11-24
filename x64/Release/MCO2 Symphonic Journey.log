@@ -1,21 +1,11 @@
-﻿  Level.cpp
-  LevelOne.cpp
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(61,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(62,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(96,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(97,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  LevelTwo.cpp
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(62,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(63,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(97,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(98,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  FullNote.cpp
-  HalfNote.cpp
-  Notes.cpp
-  main.cpp
+﻿  LevelOne.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(65,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(66,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(99,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(100,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   Generating code
-  3 of 333 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
+  1 of 337 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   MCO2 Symphonic Journey.vcxproj -> C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\x64\Release\MCO2 Symphonic Journey.exe

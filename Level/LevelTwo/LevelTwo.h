@@ -36,7 +36,7 @@ public:
     void spawnNotes(int amount);
     void spawnBorders(int amount);
     std::vector<Collidable*>& getCollidables() override;
-
+    bool isSpaceFree(sf::FloatRect& bounds);
 };
 
 #endif

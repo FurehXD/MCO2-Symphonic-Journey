@@ -64,7 +64,7 @@ void Game::update()
         changeLevel(1);
 
 
-    if (this->player.getNotesTaken() == this->levels[this->currentLevelndex]->getNoteAmount() - 1)
+    if (this->player.getNotesTaken() == this->levels[this->currentLevelndex]->getNoteAmount())
     {
         if (this->currentLevelndex < 4)
         {
