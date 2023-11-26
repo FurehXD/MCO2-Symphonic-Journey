@@ -26,3 +26,7 @@ bool Level::isSpaceFree(sf::FloatRect& bounds)
     }
     return true;
 }
+
+void Level::stopMusicLevel() {
+    PlaySound(NULL, 0, 0);
+}

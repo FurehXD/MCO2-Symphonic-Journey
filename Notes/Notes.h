@@ -11,6 +11,8 @@ class Notes : public Collidable
 	protected:
 		sf::CircleShape ntCircle;
 		sf::Vector2f notePos;
+		sf::Sprite notes;
+		sf::Texture texture;
 		int scoreValue;
 
 	public:

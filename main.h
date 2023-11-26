@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include "SFML/Graphics.hpp"
+#include "Windows.h"
 #include <iostream>
 #include "Game/Game.cpp"
 #include "Utilities/Position/Position.cpp"

@@ -9,9 +9,9 @@ void Game::startGame()
 {
     std::cout << "Welcome to the Symphonic Journey!" << std::endl;
     std::cout <<  std::endl;
-
     this->initialize();
     sf::RenderWindow window(sf::VideoMode(1280, 720), "SFML works!");
+    levels[this->currentLevelIndex]->playMusicLevel();
     while(window.isOpen())
     {     
         this->update();
@@ -30,7 +30,6 @@ void Game::initialize()
 
 void Game::display(sf::RenderWindow& window)
 {
-    
     window.clear();
     if (this->currentLevelIndex < levels.size() && levels[this->currentLevelIndex])
     {
@@ -42,6 +41,7 @@ void Game::display(sf::RenderWindow& window)
                 window.draw(*drawable);
             }
         }
+        
     }
     window.display();
 }
@@ -99,7 +99,9 @@ void Game::changeLevel(int levelIndex)
 {
     if (levelIndex >= 0 && levelIndex < levels.size() && levels[levelIndex])
     {
+        levels[this->currentLevelIndex]->stopMusicLevel();
         this->currentLevelIndex = levelIndex;
+        levels[this->currentLevelIndex]->playMusicLevel();
     }
     else
     {

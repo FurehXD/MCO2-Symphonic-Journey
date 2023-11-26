@@ -131,3 +131,6 @@ std::vector<Collidable*>& LevelOne::getCollidables()
     return this->vecCollidables;
 }
 
+void LevelOne::playMusicLevel() {
+    PlaySound(TEXT("../MCO2-Symphonic-Journey/Level/LevelOne/furelise.wav"), NULL, SND_ASYNC);
+}

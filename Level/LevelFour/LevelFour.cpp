@@ -147,3 +147,7 @@ std::vector<Collidable*>& LevelFour::getCollidables()
 {
     return this->vecCollidables;
 }
+
+void LevelFour::playMusicLevel() {
+    bool play = PlaySound(TEXT("../MCO2-Symphonic-Journey/Level/LevelFour/TheFlowerofDuet.wav"), NULL, SND_ASYNC);
+}

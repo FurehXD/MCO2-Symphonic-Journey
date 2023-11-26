@@ -38,6 +38,7 @@ public:
     void spawnNotes(int amount) override;
     void spawnBorders(int amount) override;
     std::vector<Collidable*>& getCollidables() override;
+    void playMusicLevel() override;
 };
 
 #endif

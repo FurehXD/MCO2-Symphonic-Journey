@@ -3,6 +3,7 @@
 
 
 #include "SFML/Graphics.hpp"
+#include "Windows.h"
 #include "../Player/Player.h"
 #include "../Utilities/Collision/Collidable.h"
 #include "vector"
@@ -36,6 +37,8 @@ class Level
 		virtual int getNoteAmount();
 		virtual int getBorderAmount();
 		virtual bool isSpaceFree(sf::FloatRect& bounds);
+		virtual void playMusicLevel() = 0;
+		virtual void stopMusicLevel();
 
 };
 

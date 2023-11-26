@@ -1,0 +1,6 @@
+﻿  LevelFour.cpp
+C:\Users\Nikos\Documents\GitHub\MCO2-Symphonic-Journey\Level\LevelFour\LevelFour.cpp(68,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikos\Documents\GitHub\MCO2-Symphonic-Journey\Level\LevelFour\LevelFour.cpp(69,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikos\Documents\GitHub\MCO2-Symphonic-Journey\Level\LevelFour\LevelFour.cpp(125,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikos\Documents\GitHub\MCO2-Symphonic-Journey\Level\LevelFour\LevelFour.cpp(126,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  MCO2 Symphonic Journey.vcxproj -> C:\Users\Nikos\Documents\GitHub\MCO2-Symphonic-Journey\x64\Debug\MCO2 Symphonic Journey.exe

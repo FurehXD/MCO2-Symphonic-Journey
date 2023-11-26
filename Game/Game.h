@@ -22,7 +22,6 @@ class Game
         int currentLevelIndex;
         sf::Clock clock;
 
-      
 
     public:
         Game();
