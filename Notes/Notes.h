@@ -24,6 +24,7 @@ class Notes : public Collidable
 		void onCollision(Collidable& object) override;
 		sf::FloatRect getBounds() override;
 		virtual int getScoreValue();
+		virtual sf::Sprite& getNoteSprite();
 		
 
 

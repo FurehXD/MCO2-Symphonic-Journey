@@ -2,9 +2,13 @@
 
 Notes::Notes()
 {
-	this->ntCircle.setRadius(5);
-	this->ntCircle.setFillColor(sf::Color::Red);
+	//this->ntCircle.setRadius(5);
+	//this->ntCircle.setFillColor(sf::Color::Red);
 	this->scoreValue = 5;
+	this->texture.loadFromFile("../MCO2-Symphonic-Journey/Notes/notes.png");
+	this->notes.setTexture(this->texture);
+	this->notes.setScale(0.5, 0.5);
+	this->notes.setColor(sf::Color::Red);
 }
 
 sf::CircleShape& Notes::getShape()
@@ -22,7 +26,8 @@ void Notes::setNotePos(float x, float y)
 	this->notePos.x = x;
 	this->notePos.y = y;
 
-	this->ntCircle.setPosition(this->notePos);
+	//this->ntCircle.setPosition(this->notePos);   //changed
+	this->notes.setPosition(this->notePos);
 }
 
 void Notes::onCollision(Collidable& object)
@@ -30,12 +35,15 @@ void Notes::onCollision(Collidable& object)
 	
 }
 
-sf::FloatRect Notes::getBounds()
-{
-	return this->ntCircle.getGlobalBounds();
+sf::Sprite& Notes::getNoteSprite() {
+	return this->notes;
 }
 
-
+sf::FloatRect Notes::getBounds()
+{
+	//return this->ntCircle.getGlobalBounds();     //changed
+	return this->notes.getGlobalBounds();
+}
 
 int Notes::getScoreValue()
 {

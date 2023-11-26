@@ -93,7 +93,8 @@ void LevelFour::spawnNotes(int amount)
                 spaceFree = isSpaceFree(bounds);
                 if (spaceFree)
                 {
-                    this->vecDrawables.push_back(&note->getShape());
+                    //this->vecDrawables.push_back(&note->getShape());        //changed
+                    this->vecDrawables.push_back(&note->getNoteSprite());
                     this->vecCollidables.push_back(note);
                 }
                 else
