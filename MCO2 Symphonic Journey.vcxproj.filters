@@ -66,6 +66,9 @@
     <ClCompile Include="Level\LevelFourFinish\LevelFourFinish.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level\EndGame\EndGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -119,6 +122,9 @@
     <ClInclude Include="Level\LevelFourFinish\LevelFourFinish.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Level\EndGame\EndGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\eightnote-min.png">
@@ -148,5 +154,10 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\Flowers.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Lilas.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

@@ -1,10 +1,7 @@
-﻿  LevelFourFinish.cpp
-  LevelThreeFinish.cpp
-  LevelTwoFinish.cpp
-  main.cpp
+﻿  main.cpp
   Generating code
-  217 of 536 functions (40.5%) were compiled, the rest were copied from previous compilation.
-    81 functions were new in current compilation
-    57 functions had inline decision re-evaluated but remain unchanged
+  2 of 563 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   MCO2 Symphonic Journey.vcxproj -> C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\x64\Release\MCO2 Symphonic Journey.exe

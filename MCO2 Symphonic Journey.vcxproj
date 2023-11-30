@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Border\Border.cpp" />
+    <ClCompile Include="Level\EndGame\EndGame.cpp" />
     <ClCompile Include="Level\LevelFourFinish\LevelFourFinish.cpp" />
     <ClCompile Include="Level\LevelThreeFinish\LevelThreeFinish.cpp" />
     <ClCompile Include="Level\LevelTwoFinish\LevelTwoFinish.cpp" />
@@ -171,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Border\Border.h" />
+    <ClInclude Include="Level\EndGame\EndGame.h" />
     <ClInclude Include="Level\LevelFourFinish\LevelFourFinish.h" />
     <ClInclude Include="Level\LevelThreeFinish\LevelThreeFinish.h" />
     <ClInclude Include="Level\LevelTwoFinish\LevelTwoFinish.h" />
@@ -200,6 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\Flowers.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Lilas.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

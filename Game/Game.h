@@ -12,6 +12,7 @@
 #include "../Level/LevelThreeFinish/LevelThreeFinish.h"
 #include "../Level/LevelFour/LevelFour.h"
 #include "../Level/LevelFourFinish/LevelFourFinish.h"
+#include "../Level/EndGame/EndGame.h"
 #include "../Player/Player.h"
 #include "iostream"
 #include "vector"

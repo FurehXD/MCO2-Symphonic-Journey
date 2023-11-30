@@ -45,8 +45,9 @@ void Game::initialize()
     this->levels.push_back(std::make_unique<LevelThreeFinish>());
     this->levels.push_back(std::make_unique<LevelFour>());
     this->levels.push_back(std::make_unique<LevelFourFinish>());
+    this->levels.push_back(std::make_unique<EndGame>());
 
-    this->currentLevelIndex = 0;
+    this->currentLevelIndex = 8;
 }
 
 void Game::display(sf::RenderWindow& window)
@@ -100,6 +101,7 @@ void Game::update()
             else
             {
                 std::cout << "PLAYER WINS!" << std::endl;
+                exit(1);
                 // Handle the win condition
             }
         }
@@ -127,7 +129,7 @@ void Game::changeLevel(int levelIndex)
     }
     else
     {
-        std::cout << "Could not change Level" << std::endl
+        std::cout << "Could not change Level" << std::endl;
     }
 }
 
