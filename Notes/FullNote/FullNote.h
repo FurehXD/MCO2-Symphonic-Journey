@@ -6,9 +6,9 @@
 class FullNote : public Notes
 {
 
-
 public:
 	FullNote();
+
 };
 
 

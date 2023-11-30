@@ -2,11 +2,10 @@
 
 Notes::Notes()
 {
-	//this->ntCircle.setRadius(5);
-	//this->ntCircle.setFillColor(sf::Color::Red);
 	this->scoreValue = 5;
-	this->texture.loadFromFile("../MCO2-Symphonic-Journey/Notes/quarternote.png");
+	this->texture.loadFromFile("../MCO2-Symphonic-Journey/Notes/notes.png");
 	this->notes.setTexture(this->texture);
+	this->notes.setTextureRect(sf::IntRect(0, 0, texture.getSize().x, texture.getSize().y));
 	this->notes.setScale(0.5, 0.5);
 }
 
