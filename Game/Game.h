@@ -13,7 +13,6 @@
 #include "../Level/LevelFour/LevelFour.h"
 #include "../Level/LevelFourFinish/LevelFourFinish.h"
 #include "../Player/Player.h"
-#include "../Wall/Wall.h"
 #include "iostream"
 #include "vector"
 #include <memory>

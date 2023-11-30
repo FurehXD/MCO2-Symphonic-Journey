@@ -57,7 +57,7 @@ void Game::display(sf::RenderWindow& window)
         auto& drawables = levels[this->currentLevelIndex]->getDrawables();
         for (auto& drawable : drawables)
         {
-            if (drawable) // This check is redundant if you are sure that all drawables are valid
+            if (drawable) 
             {
                 window.draw(*drawable);
             }
@@ -107,6 +107,7 @@ void Game::update()
     else 
     {
         //If not a valid level
+        std::cout << "Loaded an invalid level" << std::endl;
     }
 }
 
@@ -126,7 +127,7 @@ void Game::changeLevel(int levelIndex)
     }
     else
     {
-        // Handle the error, perhaps setting it to a default level or displaying a message
+        std::cout << "Could not change Level" << std::endl
     }
 }
 
