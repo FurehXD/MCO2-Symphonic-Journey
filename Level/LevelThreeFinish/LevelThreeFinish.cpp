@@ -80,5 +80,5 @@ std::vector<Collidable*>& LevelThreeFinish::getCollidables()
 }
 
 void LevelThreeFinish::playMusicLevel() {
-    PlaySound(TEXT("./Assets/Lilas.mp3"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/Winter.wav"), NULL, SND_ASYNC);
 }

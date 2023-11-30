@@ -2,10 +2,9 @@
 
 HalfNote::HalfNote()
 {
-	//this->ntCircle.setFillColor(sf::Color::Yellow);
 	this->scoreValue = 10;
-	this->texture.loadFromFile("Assets/halfnote-min.png");
+	this->texture.loadFromFile("Assets/halfnote.png");
 	this->notes.setTexture(this->texture);
-	this->notes.setScale(0.5, 0.5);
-	this->notes.setColor(sf::Color::Yellow);
+	this->notes.setTextureRect(sf::IntRect(0, 0, texture.getSize().x, texture.getSize().y));
+	this->notes.setScale(0.2, 0.2);
 }

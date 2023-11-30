@@ -148,5 +148,5 @@ std::vector<Collidable*>& LevelTwo::getCollidables()
 }
 
 void LevelTwo::playMusicLevel() {
-    PlaySound(TEXT("../MCO2-Symphonic-Journey/Level/LevelTwo/moonlightSonata.wav"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/bgmoonlightSonata.wav"), NULL, SND_ASYNC);
 }

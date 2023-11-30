@@ -158,5 +158,5 @@ std::vector<Collidable*>& LevelThree::getCollidables()
 }
 
 void LevelThree::playMusicLevel() {
-    PlaySound(TEXT("../MCO2-Symphonic-Journey/Level/LevelThree/Winter.wav"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/bgWinter.wav"), NULL, SND_ASYNC);
 }
