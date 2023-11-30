@@ -1,7 +1,7 @@
-﻿  HalfNote.cpp
+﻿  main.cpp
   Generating code
-  3 of 428 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+  2 of 428 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   MCO2 Symphonic Journey.vcxproj -> C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\x64\Release\MCO2 Symphonic Journey.exe

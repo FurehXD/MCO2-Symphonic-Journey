@@ -41,7 +41,7 @@ void Game::initialize()
     this->levels.push_back(std::make_unique<LevelTwo>());
     this->levels.push_back(std::make_unique<LevelThree>());
     this->levels.push_back(std::make_unique<LevelFour>());
-    this->currentLevelIndex = 3;
+    this->currentLevelIndex = 0;
 }
 
 void Game::display(sf::RenderWindow& window)
