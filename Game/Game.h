@@ -4,6 +4,7 @@
 #include "SFML/Graphics.hpp"
 #include "../Utilities/Collision/Collidable.h"
 #include "../Level/Level.h"
+#include "../Level/MainMenu/MainMenu.h"
 #include "../Level/LevelOne/LevelOne.h"
 #include "../Level/LevelOneFinish/LevelOneFinish.h"
 #include "../Level/LevelTwo/LevelTwo.h"
