@@ -97,30 +97,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Notes\quarternote.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\eightnote-min.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\halfnot.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\halfnote-min.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\note.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\notes.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\twoEightnotes-min.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Notes\wholenote.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Assets\eightnote-min.png">
       <Filter>Resource Files</Filter>
     </Image>

@@ -189,14 +189,6 @@
     <Image Include="Assets\quarternote.png" />
     <Image Include="Assets\twoEightnotes-min.png" />
     <Image Include="Assets\wholenote.png" />
-    <Image Include="Notes\eightnote-min.png" />
-    <Image Include="Notes\halfnot.png" />
-    <Image Include="Notes\halfnote-min.png" />
-    <Image Include="Notes\note.png" />
-    <Image Include="Notes\notes.png" />
-    <Image Include="Notes\quarternote.png" />
-    <Image Include="Notes\twoEightnotes-min.png" />
-    <Image Include="Notes\wholenote.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,33 +5,43 @@ LevelOne::LevelOne()
     this->noteAmount = 20;
     this->borderAmount = 15;
 
-    this->spLeftWall.setSize(sf::Vector2f(720, 10));
-    this->spLeftWall.setPosition(5.0f, 0.0f);
-    this->spLeftWall.setRotation(90);
-    this->spLeftWall.setFillColor(sf::Color::Blue);
+    Border* leftBorder = new Border();
+    leftBorder->setBorderPos(0.0f, 0.0f);
+    leftBorder->getShape().setSize(sf::Vector2f(10, 720));
+    leftBorder->getShape().setFillColor(sf::Color::Blue);
 
-    this->spRightWall.setSize(sf::Vector2f(720, 5));
-    this->spRightWall.setPosition(1280.0f, 0.0f);
-    this->spRightWall.setRotation(90);
-    this->spRightWall.setFillColor(sf::Color::Blue);
+    Border* rightBorder = new Border();
+    rightBorder->setBorderPos(1270.0f, 0.0f); // Adjust for the thickness of the border
+    rightBorder->getShape().setSize(sf::Vector2f(10, 720));
+    rightBorder->getShape().setFillColor(sf::Color::Blue);
 
-    this->spTopWall.setSize(sf::Vector2f(1280, 5));
-    this->spTopWall.setPosition(5.0f, 0.0f);
-    this->spTopWall.setFillColor(sf::Color::Blue);
+    Border* topBorder = new Border();
+    topBorder->setBorderPos(0.0f, 0.0f);
+    topBorder->getShape().setSize(sf::Vector2f(1280, 10));
+    topBorder->getShape().setFillColor(sf::Color::Blue);
 
-    this->spBotWall.setSize(sf::Vector2f(1280, 5));
-    this->spBotWall.setPosition(0.0f, 715.0f);
-    this->spBotWall.setFillColor(sf::Color::Blue);
-    
-    this->vecDrawables.push_back(&this->spLeftWall);
-    this->vecDrawables.push_back(&this->spRightWall);
-    this->vecDrawables.push_back(&this->spTopWall);
-    this->vecDrawables.push_back(&this->spBotWall);
+    Border* bottomBorder = new Border();
+    bottomBorder->setBorderPos(0.0f, 710.0f); // Adjust for the thickness of the border
+    bottomBorder->getShape().setSize(sf::Vector2f(1280, 10));
+    bottomBorder->getShape().setFillColor(sf::Color::Blue);
+
+    // Add borders to the collidables vector
+    this->vecCollidables.push_back(leftBorder);
+    this->vecCollidables.push_back(rightBorder);
+    this->vecCollidables.push_back(topBorder);
+    this->vecCollidables.push_back(bottomBorder);
+
+    this->vecDrawables.push_back(&leftBorder->getShape());
+    this->vecDrawables.push_back(&rightBorder->getShape());
+    this->vecDrawables.push_back(&topBorder->getShape());
+    this->vecDrawables.push_back(&bottomBorder->getShape());
 
     this->vecDrawables.push_back(&this->playerShape);
 
+
     this->spawnNotes(this->noteAmount);
     this->spawnBorders(this->borderAmount);
+
     
 }
 
@@ -50,13 +60,10 @@ void LevelOne::spawnNotes(int amount)
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    // Assuming a border of 10 pixels
     int borderWidth = 30;
-    // Adjusted to account for border
     std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
-    // Adjusted to account for border
     std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
-    std::uniform_int_distribution<> disType(0, 0); // Adjust for the type of notes if needed
+    std::uniform_int_distribution<> disType(0, 0); 
 
     for (int i = 0; i < amount; i++) {
         float x, y;
@@ -83,7 +90,6 @@ void LevelOne::spawnNotes(int amount)
                 spaceFree = isSpaceFree(bounds);
                 if (spaceFree)
                 {
-                    //this->vecDrawables.push_back(&note->getShape());
                     this->vecDrawables.push_back(&note->getNoteSprite());
                     this->vecCollidables.push_back(note);
                 }
@@ -102,11 +108,8 @@ void LevelOne::spawnBorders(int amount)
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    // Assuming a border of 10 pixels
     int borderWidth = 30;
-    // Adjusted to account for border
     std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
-    // Adjusted to account for border
     std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
 
     for (int i = 0; i < amount; ++i) {
