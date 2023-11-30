@@ -2,7 +2,8 @@
 
 Level::Level()
 {
-	
+    this->font.loadFromFile("Assets/Flowers.ttf");
+    this->text.setFont(font);
 }
 
 int Level::getNoteAmount()

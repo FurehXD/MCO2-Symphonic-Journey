@@ -63,7 +63,7 @@ void LevelFour::spawnNotes(int amount)
     int borderWidth = 30;
     std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
     std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
-    std::uniform_int_distribution<> disType(2, 2); 
+    std::uniform_int_distribution<> disType(0, 3); 
 
     for (int i = 0; i < amount; i++)
     {

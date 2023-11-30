@@ -152,6 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Border\Border.cpp" />
+    <ClCompile Include="Level\LevelFourFinish\LevelFourFinish.cpp" />
+    <ClCompile Include="Level\LevelThreeFinish\LevelThreeFinish.cpp" />
+    <ClCompile Include="Level\LevelTwoFinish\LevelTwoFinish.cpp" />
+    <ClCompile Include="Level\LevelOneFinish\LevelOneFinish.cpp" />
     <ClCompile Include="Level\LevelFour\LevelFour.cpp" />
     <ClCompile Include="Level\LevelThree\LevelThree.cpp" />
     <ClCompile Include="Level\LevelTwo\LevelTwo.cpp" />
@@ -167,6 +171,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Border\Border.h" />
+    <ClInclude Include="Level\LevelFourFinish\LevelFourFinish.h" />
+    <ClInclude Include="Level\LevelThreeFinish\LevelThreeFinish.h" />
+    <ClInclude Include="Level\LevelTwoFinish\LevelTwoFinish.h" />
+    <ClInclude Include="Level\LevelOneFinish\LevelOneFinish.h" />
     <ClInclude Include="Level\LevelFour\LevelFour.h" />
     <ClInclude Include="Level\LevelThree\LevelThree.h" />
     <ClInclude Include="Level\LevelTwo\LevelTwo.h" />
@@ -189,6 +197,9 @@
     <Image Include="Assets\quarternote.png" />
     <Image Include="Assets\twoEightnotes-min.png" />
     <Image Include="Assets\wholenote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Flowers.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -54,6 +54,18 @@
     <ClCompile Include="Level\LevelFour\LevelFour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level\LevelOneFinish\LevelOneFinish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelTwoFinish\LevelTwoFinish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelThreeFinish\LevelThreeFinish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelFourFinish\LevelFourFinish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -95,6 +107,18 @@
     <ClInclude Include="Level\LevelFour\LevelFour.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Level\LevelOneFinish\LevelOneFinish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelTwoFinish\LevelTwoFinish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelThreeFinish\LevelThreeFinish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelFourFinish\LevelFourFinish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\eightnote-min.png">
@@ -121,5 +145,8 @@
     <Image Include="Assets\wholenote.png">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Flowers.ttf" />
   </ItemGroup>
 </Project>

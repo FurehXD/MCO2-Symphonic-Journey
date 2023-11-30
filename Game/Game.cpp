@@ -27,7 +27,7 @@ void Game::startGame()
     background.setPosition(0, 0);
     window.draw(background);*/     //tried putting background, didn't work
 
-    levels[this->currentLevelIndex]->playMusicLevel();
+    this->levels[this->currentLevelIndex]->playMusicLevel();
     while(window.isOpen())
     {     
         this->update();
@@ -38,9 +38,14 @@ void Game::startGame()
 void Game::initialize()
 {
     this->levels.push_back(std::make_unique<LevelOne>());
+    this->levels.push_back(std::make_unique<LevelOneFinish>());
     this->levels.push_back(std::make_unique<LevelTwo>());
+    this->levels.push_back(std::make_unique<LevelTwoFinish>());
     this->levels.push_back(std::make_unique<LevelThree>());
+    this->levels.push_back(std::make_unique<LevelThreeFinish>());
     this->levels.push_back(std::make_unique<LevelFour>());
+    this->levels.push_back(std::make_unique<LevelFourFinish>());
+
     this->currentLevelIndex = 0;
 }
 

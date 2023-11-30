@@ -23,6 +23,8 @@ class Level
 		sf::RectangleShape spRightWall;
 
 		sf::CircleShape playerShape;
+		sf::Text text;
+		sf::Font font;
 
 		int noteAmount;
 		int borderAmount;

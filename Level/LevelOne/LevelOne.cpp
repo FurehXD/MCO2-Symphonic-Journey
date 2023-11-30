@@ -143,5 +143,5 @@ std::vector<Collidable*>& LevelOne::getCollidables()
 }
 
 void LevelOne::playMusicLevel() {
-    PlaySound(TEXT("../MCO2-Symphonic-Journey/Level/LevelOne/furelise.wav"), NULL, SND_ASYNC);
+    PlaySound(TEXT("./Assets/Lilas.mp3"), NULL, SND_ASYNC);
 }
