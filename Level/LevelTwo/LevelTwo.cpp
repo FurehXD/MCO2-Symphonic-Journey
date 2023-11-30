@@ -53,9 +53,13 @@ void LevelTwo::spawnNotes(int amount)
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    std::uniform_int_distribution<> disX(0, 1280);
-    std::uniform_int_distribution<> disY(0, 720);
-    std::uniform_int_distribution<> disType(0, 1); // 0 for Notes, 1 for FullNotes, 2 for HalfNote
+    // Assuming a border of 10 pixels
+    int borderWidth = 30;
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
+    std::uniform_int_distribution<> disType(0, 1); // Adjust for the type of notes if needed
 
     for (int i = 0; i < amount; i++) {
         float x, y;
@@ -103,8 +107,12 @@ void LevelTwo::spawnBorders(int amount)
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    std::uniform_int_distribution<> disX(0, 1280);
-    std::uniform_int_distribution<> disY(0, 720);
+    // Assuming a border of 10 pixels
+    int borderWidth = 30;
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
 
     for (int i = 0; i < amount; ++i) 
     {

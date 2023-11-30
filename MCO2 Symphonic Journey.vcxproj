@@ -147,7 +147,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>D:\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-main.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -179,6 +179,24 @@
     <ClInclude Include="Notes\Notes.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Wall\Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\eightnote-min.png" />
+    <Image Include="Assets\halfnot.png" />
+    <Image Include="Assets\halfnote-min.png" />
+    <Image Include="Assets\note.png" />
+    <Image Include="Assets\notes.png" />
+    <Image Include="Assets\quarternote.png" />
+    <Image Include="Assets\twoEightnotes-min.png" />
+    <Image Include="Assets\wholenote.png" />
+    <Image Include="Notes\eightnote-min.png" />
+    <Image Include="Notes\halfnot.png" />
+    <Image Include="Notes\halfnote-min.png" />
+    <Image Include="Notes\note.png" />
+    <Image Include="Notes\notes.png" />
+    <Image Include="Notes\quarternote.png" />
+    <Image Include="Notes\twoEightnotes-min.png" />
+    <Image Include="Notes\wholenote.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

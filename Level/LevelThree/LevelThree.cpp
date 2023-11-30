@@ -49,13 +49,16 @@ std::vector<sf::Drawable*>& LevelThree::getDrawables()
 
 void LevelThree::spawnNotes(int amount)
 {
-    // Random number generator
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    std::uniform_int_distribution<> disX(0, 1280);
-    std::uniform_int_distribution<> disY(0, 720);
-    std::uniform_int_distribution<> disType(0, 3); // 0 for Notes, 1 for FullNotes, 2 for HalfNote, 3 for QuarterNote
+    // Assuming a border of 10 pixels
+    int borderWidth = 30;
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
+    std::uniform_int_distribution<> disType(0, 3); // Adjust for the type of notes if needed
 
     for (int i = 0; i < amount; i++) 
     {
@@ -112,8 +115,12 @@ void LevelThree::spawnBorders(int amount)
     std::random_device rd;
     std::mt19937 gen(rd());
 
-    std::uniform_int_distribution<> disX(0, 1280);
-    std::uniform_int_distribution<> disY(0, 720);
+    // Assuming a border of 10 pixels
+    int borderWidth = 30;
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disX(borderWidth, 1280 - 2 * borderWidth);
+    // Adjusted to account for border
+    std::uniform_int_distribution<> disY(borderWidth, 720 - 2 * borderWidth);
 
     for (int i = 0; i < amount; ++i) 
     {

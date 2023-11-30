@@ -3,7 +3,7 @@
 Notes::Notes()
 {
 	this->scoreValue = 5;
-	this->texture.loadFromFile("../MCO2-Symphonic-Journey/Notes/notes.png");
+	this->texture.loadFromFile("Assets/notes.png");
 	this->notes.setTexture(this->texture);
 	this->notes.setTextureRect(sf::IntRect(0, 0, texture.getSize().x, texture.getSize().y));
 	this->notes.setScale(0.5, 0.5);

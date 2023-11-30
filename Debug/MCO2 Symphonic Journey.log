@@ -1,4 +1,181 @@
-﻿  main.cpp
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\Level.cpp(31,31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Game\Game.cpp(87,40): warning C4018: '<=': signed/unsigned mismatch
-  MCO2 Symphonic Journey.vcxproj -> C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Debug\MCO2 Symphonic Journey.exe
+﻿  Border.cpp
+  LevelFour.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelFour\LevelFour.cpp(68,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelFour\LevelFour.cpp(69,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelFour\LevelFour.cpp(126,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelFour\LevelFour.cpp(127,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  LevelThree.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelThree\LevelThree.cpp(68,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelThree\LevelThree.cpp(69,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelThree\LevelThree.cpp(126,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelThree\LevelThree.cpp(127,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  LevelTwo.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(67,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(68,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(117,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelTwo\LevelTwo.cpp(118,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  QuarterNote.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Notes\QuarterNote\QuarterNote.cpp(9,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Notes\QuarterNote\QuarterNote.cpp(9,23): warning C4305: 'argument': truncation from 'double' to 'float'
+  Collidable.cpp
+  HalfNote.cpp
+  FullNote.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Notes\FullNote\FullNote.cpp(10,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Notes\FullNote\FullNote.cpp(10,23): warning C4305: 'argument': truncation from 'double' to 'float'
+  Level.cpp
+  LevelOne.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(64,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(65,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(111,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Level\LevelOne\LevelOne.cpp(112,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Notes.cpp
+  main.cpp
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Game\Game.cpp(50,33): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Game\Game.cpp(72,65): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Game\Game.cpp(90,41): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Game\Game.cpp(116,39): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+  Wall.cpp
+  Generating Code...
+LevelOne.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+Notes.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+main.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+Border.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+Notes.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+Wall.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+QuarterNote.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+FullNote.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+Level.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+Border.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Shape::~Shape(void)" (??1Shape@sf@@UAE@XZ)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+main.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+Border.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (?setFillColor@Shape@sf@@QAEXABVColor@2@@Z)
+Border.obj : error LNK2019: unresolved external symbol "public: class sf::Rect<float> __thiscall sf::Shape::getGlobalBounds(void)const " (?getGlobalBounds@Shape@sf@@QBE?AV?$Rect@M@2@XZ) referenced in function "public: virtual class sf::Rect<float> __thiscall Border::getBounds(void)" (?getBounds@Border@@UAE?AV?$Rect@M@sf@@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: class sf::Rect<float> __thiscall sf::Shape::getGlobalBounds(void)const " (?getGlobalBounds@Shape@sf@@QBE?AV?$Rect@M@2@XZ)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+Wall.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+Border.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+Level.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float> const &)" (??0RectangleShape@sf@@QAE@ABV?$Vector2@M@1@@Z)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+Wall.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+Border.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RectangleShape::setSize(class sf::Vector2<float> const &)" (?setSize@RectangleShape@sf@@QAEXABV?$Vector2@M@2@@Z)
+Border.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Cyan" (?Cyan@Color@sf@@2V12@B)
+Notes.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+FullNote.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+Level.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+QuarterNote.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UAE@XZ)
+Wall.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QAEXMM@Z)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QAEXMM@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QAEXMM@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QAEXMM@Z)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QAEXMM@Z)
+Wall.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setRotation(float)" (?setRotation@Transformable@sf@@QAEXM@Z)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setRotation(float)" (?setRotation@Transformable@sf@@QAEXM@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setRotation(float)" (?setRotation@Transformable@sf@@QAEXM@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setRotation(float)" (?setRotation@Transformable@sf@@QAEXM@Z)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setRotation(float)" (?setRotation@Transformable@sf@@QAEXM@Z)
+Notes.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+FullNote.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+Level.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+LevelFour.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+QuarterNote.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::Texture::~Texture(void)" (??1Texture@sf@@QAE@XZ)
+LevelOne.obj : error LNK2019: unresolved external symbol __imp__PlaySoundW@12 referenced in function _wmemcpy
+LevelFour.obj : error LNK2001: unresolved external symbol __imp__PlaySoundW@12
+LevelThree.obj : error LNK2001: unresolved external symbol __imp__PlaySoundW@12
+LevelTwo.obj : error LNK2001: unresolved external symbol __imp__PlaySoundW@12
+Level.obj : error LNK2001: unresolved external symbol __imp__PlaySoundW@12
+LevelFour.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Magenta" (?Magenta@Color@sf@@2V12@B)
+Notes.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (??0CircleShape@sf@@QAE@MI@Z)
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (??0CircleShape@sf@@QAE@MI@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (??0CircleShape@sf@@QAE@MI@Z)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (??0CircleShape@sf@@QAE@MI@Z)
+Level.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (??0CircleShape@sf@@QAE@MI@Z)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (??0CircleShape@sf@@QAE@MI@Z)
+LevelThree.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Yellow" (?Yellow@Color@sf@@2V12@B)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Yellow" (?Yellow@Color@sf@@2V12@B)
+LevelTwo.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Red" (?Red@Color@sf@@2V12@B)
+QuarterNote.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Transformable::setScale(float,float)" (?setScale@Transformable@sf@@QAEXMM@Z) referenced in function "public: __thiscall QuarterNote::QuarterNote(void)" (??0QuarterNote@@QAE@XZ)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setScale(float,float)" (?setScale@Transformable@sf@@QAEXMM@Z)
+FullNote.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setScale(float,float)" (?setScale@Transformable@sf@@QAEXMM@Z)
+Notes.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Transformable::setScale(float,float)" (?setScale@Transformable@sf@@QAEXMM@Z)
+QuarterNote.obj : error LNK2019: unresolved external symbol "public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z) referenced in function "public: __thiscall QuarterNote::QuarterNote(void)" (??0QuarterNote@@QAE@XZ)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+FullNote.obj : error LNK2001: unresolved external symbol "public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+Notes.obj : error LNK2001: unresolved external symbol "public: bool __thiscall sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (?loadFromFile@Texture@sf@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$Rect@H@2@@Z)
+QuarterNote.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z) referenced in function "public: __thiscall QuarterNote::QuarterNote(void)" (??0QuarterNote@@QAE@XZ)
+HalfNote.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+FullNote.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+Notes.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z)
+HalfNote.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Sprite::setColor(class sf::Color const &)" (?setColor@Sprite@sf@@QAEXABVColor@2@@Z) referenced in function "public: __thiscall HalfNote::HalfNote(void)" (??0HalfNote@@QAE@XZ)
+FullNote.obj : error LNK2019: unresolved external symbol "public: class sf::Vector2<unsigned int> __thiscall sf::Texture::getSize(void)const " (?getSize@Texture@sf@@QBE?AV?$Vector2@I@2@XZ) referenced in function "public: __thiscall FullNote::FullNote(void)" (??0FullNote@@QAE@XZ)
+Notes.obj : error LNK2001: unresolved external symbol "public: class sf::Vector2<unsigned int> __thiscall sf::Texture::getSize(void)const " (?getSize@Texture@sf@@QBE?AV?$Vector2@I@2@XZ)
+FullNote.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Sprite::setTextureRect(class sf::Rect<int> const &)" (?setTextureRect@Sprite@sf@@QAEXABV?$Rect@H@2@@Z) referenced in function "public: __thiscall FullNote::FullNote(void)" (??0FullNote@@QAE@XZ)
+Notes.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::Sprite::setTextureRect(class sf::Rect<int> const &)" (?setTextureRect@Sprite@sf@@QAEXABV?$Rect@H@2@@Z)
+LevelOne.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Blue" (?Blue@Color@sf@@2V12@B)
+Notes.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Texture::Texture(void)" (??0Texture@sf@@QAE@XZ) referenced in function "public: __thiscall Notes::Notes(void)" (??0Notes@@QAE@XZ)
+Notes.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Sprite::Sprite(void)" (??0Sprite@sf@@QAE@XZ) referenced in function "public: __thiscall Notes::Notes(void)" (??0Notes@@QAE@XZ)
+Notes.obj : error LNK2019: unresolved external symbol "public: class sf::Rect<float> __thiscall sf::Sprite::getGlobalBounds(void)const " (?getGlobalBounds@Sprite@sf@@QBE?AV?$Rect@M@2@XZ) referenced in function "public: virtual class sf::Rect<float> __thiscall Notes::getBounds(void)" (?getBounds@Notes@@UAE?AV?$Rect@M@sf@@XZ)
+main.obj : error LNK2019: unresolved external symbol "public: float __thiscall sf::Time::asSeconds(void)const " (?asSeconds@Time@sf@@QBEMXZ) referenced in function "public: void __thiscall Player::handleInput(class sf::Time &)" (?handleInput@Player@@QAEXAAVTime@sf@@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Clock::Clock(void)" (??0Clock@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
+main.obj : error LNK2019: unresolved external symbol "public: class sf::Time __thiscall sf::Clock::restart(void)" (?restart@Clock@sf@@QAE?AVTime@2@XZ) referenced in function "public: void __thiscall Game::update(void)" (?update@Game@@QAEXXZ)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::String::String(char const *,class std::locale const &)" (??0String@sf@@QAE@PBDABVlocale@std@@@Z) referenced in function "public: void __thiscall Game::startGame(void)" (?startGame@Game@@QAEXXZ)
+main.obj : error LNK2019: unresolved external symbol "public: static bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (?isKeyPressed@Keyboard@sf@@SA_NW4Key@12@@Z) referenced in function "public: void __thiscall Player::handleInput(class sf::Time &)" (?handleInput@Player@@QAEXAAVTime@sf@@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (??0VideoMode@sf@@QAE@III@Z) referenced in function "public: void __thiscall Game::startGame(void)" (?startGame@Game@@QAEXXZ)
+main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall sf::WindowBase::isOpen(void)const " (?isOpen@WindowBase@sf@@QBE_NXZ) referenced in function "public: void __thiscall Game::startGame(void)" (?startGame@Game@@QAEXXZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Window::display(void)" (?display@Window@sf@@QAEXXZ) referenced in function "public: void __thiscall Game::display(class sf::RenderWindow &)" (?display@Game@@QAEXAAVRenderWindow@sf@@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (??0Color@sf@@QAE@EEEE@Z) referenced in function "public: void __thiscall Game::display(class sf::RenderWindow &)" (?display@Game@@QAEXAAVRenderWindow@sf@@@Z)
+main.obj : error LNK2001: unresolved external symbol "private: virtual void __thiscall sf::VertexArray::draw(class sf::RenderTarget &,class sf::RenderStates)const " (?draw@VertexArray@sf@@EBEXAAVRenderTarget@2@VRenderStates@2@@Z)
+main.obj : error LNK2001: unresolved external symbol "private: virtual void __thiscall sf::Shape::draw(class sf::RenderTarget &,class sf::RenderStates)const " (?draw@Shape@sf@@EBEXAAVRenderTarget@2@VRenderStates@2@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::CircleShape::setRadius(float)" (?setRadius@CircleShape@sf@@QAEXM@Z) referenced in function "public: __thiscall Player::Player(void)" (??0Player@@QAE@XZ)
+main.obj : error LNK2019: unresolved external symbol "public: float __thiscall sf::CircleShape::getRadius(void)const " (?getRadius@CircleShape@sf@@QBEMXZ) referenced in function "public: virtual void __thiscall Player::onCollision(class Collidable &)" (?onCollision@Player@@UAEXAAVCollidable@@@Z)
+main.obj : error LNK2001: unresolved external symbol "public: virtual unsigned int __thiscall sf::CircleShape::getPointCount(void)const " (?getPointCount@CircleShape@sf@@UBEIXZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual class sf::Vector2<float> __thiscall sf::CircleShape::getPoint(unsigned int)const " (?getPoint@CircleShape@sf@@UBE?AV?$Vector2@M@2@I@Z)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (?clear@RenderTarget@sf@@QAEXABVColor@2@@Z) referenced in function "public: void __thiscall Game::display(class sf::RenderWindow &)" (?display@Game@@QAEXAAVRenderWindow@sf@@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z) referenced in function "public: void __thiscall Game::display(class sf::RenderWindow &)" (?display@Game@@QAEXAAVRenderWindow@sf@@@Z)
+Wall.obj : error LNK2001: unresolved external symbol "public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z)
+main.obj : error LNK2019: unresolved external symbol "public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z) referenced in function "public: void __thiscall Game::startGame(void)" (?startGame@Game@@QAEXXZ)
+main.obj : error LNK2019: unresolved external symbol "public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (??1RenderWindow@sf@@UAE@XZ) referenced in function "public: void __thiscall Game::startGame(void)" (?startGame@Game@@QAEXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: static class sf::RenderStates const sf::RenderStates::Default" (?Default@RenderStates@sf@@2V12@B)
+Wall.obj : error LNK2001: unresolved external symbol "public: static class sf::RenderStates const sf::RenderStates::Default" (?Default@RenderStates@sf@@2V12@B)
+main.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Green" (?Green@Color@sf@@2V12@B)
+Wall.obj : error LNK2019: unresolved external symbol "public: void __thiscall sf::Transformable::setOrigin(float,float)" (?setOrigin@Transformable@sf@@QAEXMM@Z) referenced in function "public: __thiscall Wall::Wall(float,float,float,float,float)" (??0Wall@@QAE@MMMMM@Z)
+D:\SFML-2.6.1\lib\sfml-system.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\SFML-2.6.1\lib\sfml-window.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\SFML-2.6.1\lib\sfml-graphics.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\SFML-2.6.1\lib\sfml-main.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\nalyr\source\repos\MCO2 Symphonic Journey\Debug\MCO2 Symphonic Journey.exe : fatal error LNK1120: 48 unresolved externals
