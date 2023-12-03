@@ -6,8 +6,8 @@ LevelThreeFinish::LevelThreeFinish()
     this->borderAmount = 0;
 
     this->text.setString("Beethoven lol");
-    this->text.setPosition(440, 200);
-    this->text.setCharacterSize(72);
+    this->text.setPosition(50, 100);
+    this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);
 
     Border* leftBorder = new Border();
@@ -64,7 +64,7 @@ void LevelThreeFinish::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
-    note->setNotePos(590, 360);
+    note->setNotePos(1200, 645);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }

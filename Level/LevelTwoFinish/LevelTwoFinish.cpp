@@ -5,9 +5,9 @@ LevelTwoFinish::LevelTwoFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Beethoven lol");
-    this->text.setPosition(440, 200);
-    this->text.setCharacterSize(72);
+    this->text.setString("Moonlight Sonata was composed by Ludwig van Beethoven.\nIt was composed in the eighteen hundres,\nand this piece was known for its hauntingly beautiful melody\nand stands as one of his widely recognized works.");
+    this->text.setPosition(50, 100);
+    this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);
 
     Border* leftBorder = new Border();
@@ -64,7 +64,7 @@ void LevelTwoFinish::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
-    note->setNotePos(590, 360);
+    note->setNotePos(1200, 645);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }
