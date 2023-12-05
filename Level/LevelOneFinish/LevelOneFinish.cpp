@@ -5,7 +5,7 @@ LevelOneFinish::LevelOneFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Für Elise was composed by Ludwig van Beethoven. \nHe was a German composer and pianist from the eighteenth century.\nHe was widely regarded as one of the greatest composers\ncreating powerful and emotional compositions\nand leaving an enduring impact on classical music.");
+    this->text.setString("Für Elise was composed by Ludwig van Beethoven.\nHe was a German composer and pianist from the eighteenth century.\nHe was widely regarded as one of the greatest composers\ncreating powerful and emotional compositions\nand leaving an enduring impact on classical music.");
     this->text.setPosition(50, 100);
     this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);

@@ -5,7 +5,7 @@ LevelThreeFinish::LevelThreeFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Beethoven lol");
+    this->text.setString("Winter from the Four Seasons was composed by Antonio Vivaldi.\nHe was an Italian composer born in the sixteen hundreds.\nThe piece 'Winter' is a musical expression that describes the season of winter.\nIt's the last of the four music pieces that make up The Four Seasons.");
     this->text.setPosition(50, 100);
     this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);

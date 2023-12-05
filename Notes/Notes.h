@@ -4,7 +4,6 @@
 #include "SFML/Graphics.hpp"
 #include "../Utilities/Collision/Collidable.h"
 #include "iostream"
-#include "../Player/Player.h"
 
 class Notes : public Collidable
 {
