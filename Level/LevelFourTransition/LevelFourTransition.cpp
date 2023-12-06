@@ -1,6 +1,6 @@
-#include "LevelFourFinish.h"
+#include "LevelFourTransition.h"
 
-LevelFourFinish::LevelFourFinish()
+LevelFourTransition::LevelFourTransition()
 {
     this->noteAmount = 1;
     this->borderAmount = 0;
@@ -50,17 +50,17 @@ LevelFourFinish::LevelFourFinish()
 
 }
 
-void LevelFourFinish::updatePlayerDrawable(Player& player)
+void LevelFourTransition::updatePlayerDrawable(Player& player)
 {
     this->playerShape = player.getShape();
     this->playerShape.setPosition(player.getPlayerPos());
 }
-std::vector<sf::Drawable*>& LevelFourFinish::getDrawables()
+std::vector<sf::Drawable*>& LevelFourTransition::getDrawables()
 {
     return this->vecDrawables;
 }
 
-void LevelFourFinish::spawnNotes(int amount)
+void LevelFourTransition::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
@@ -69,16 +69,16 @@ void LevelFourFinish::spawnNotes(int amount)
     this->vecCollidables.push_back(note);
 }
 
-void LevelFourFinish::spawnBorders(int amount)
+void LevelFourTransition::spawnBorders(int amount)
 {
     //No borders for this level
 }
 
-std::vector<Collidable*>& LevelFourFinish::getCollidables()
+std::vector<Collidable*>& LevelFourTransition::getCollidables()
 {
     return this->vecCollidables;
 }
 
-void LevelFourFinish::playMusicLevel() {
+void LevelFourTransition::playMusicLevel() {
     PlaySound(TEXT("Assets/TheFlowerofDuet.wav"), NULL, SND_ASYNC);
 }

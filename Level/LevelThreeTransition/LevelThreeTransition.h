@@ -1,5 +1,5 @@
-#ifndef LEVEL_TWO_FINISH_H
-#define LEVEL_TWO_FINISH_H
+#ifndef LEVEL_THREE_TRANSITION_H
+#define LEVEL_THREE_TRANSITION_H
 
 #include "iostream" 
 #include "string"
@@ -12,7 +12,7 @@
 #include <random>
 
 
-class LevelTwoFinish : public Level
+class LevelThreeTransition : public Level
 {
 private:
     //Player shape
@@ -29,7 +29,7 @@ private:
 
 
 public:
-    LevelTwoFinish();
+    LevelThreeTransition();
 
     void updatePlayerDrawable(Player& player) override;
     std::vector<sf::Drawable*>& getDrawables() override;

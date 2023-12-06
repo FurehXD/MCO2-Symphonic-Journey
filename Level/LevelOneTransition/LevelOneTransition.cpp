@@ -1,6 +1,6 @@
-#include "LevelOneFinish.h"
+#include "LevelOneTransition.h"
 
-LevelOneFinish::LevelOneFinish()
+LevelOneTransition::LevelOneTransition()
 {
     this->noteAmount = 1;
     this->borderAmount = 0;
@@ -50,17 +50,17 @@ LevelOneFinish::LevelOneFinish()
 
 }
 
-void LevelOneFinish::updatePlayerDrawable(Player& player)
+void LevelOneTransition::updatePlayerDrawable(Player& player)
 {
     this->playerShape = player.getShape();
     this->playerShape.setPosition(player.getPlayerPos());
 }
-std::vector<sf::Drawable*>& LevelOneFinish::getDrawables()
+std::vector<sf::Drawable*>& LevelOneTransition::getDrawables()
 {
     return this->vecDrawables;
 }
 
-void LevelOneFinish::spawnNotes(int amount)
+void LevelOneTransition::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
@@ -69,16 +69,16 @@ void LevelOneFinish::spawnNotes(int amount)
     this->vecCollidables.push_back(note);
 }
 
-void LevelOneFinish::spawnBorders(int amount)
+void LevelOneTransition::spawnBorders(int amount)
 {
     //No borders for this level
 }
 
-std::vector<Collidable*>& LevelOneFinish::getCollidables()
+std::vector<Collidable*>& LevelOneTransition::getCollidables()
 {
     return this->vecCollidables;
 }
 
-void LevelOneFinish::playMusicLevel() {
+void LevelOneTransition::playMusicLevel() {
     PlaySound(TEXT("Assets/Note Sounds/Level.wav"), NULL, SND_ASYNC);
 }

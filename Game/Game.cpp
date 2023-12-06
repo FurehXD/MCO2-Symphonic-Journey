@@ -24,11 +24,11 @@ void Game::initialize()
 {
     this->levels.push_back(std::make_unique<MainMenu>());
     this->levels.push_back(std::make_unique<LevelOne>());
-    this->levels.push_back(std::make_unique<LevelOneFinish>());
+    this->levels.push_back(std::make_unique<LevelOneTransition>());
     this->levels.push_back(std::make_unique<LevelTwo>());
-    this->levels.push_back(std::make_unique<LevelTwoFinish>());
+    this->levels.push_back(std::make_unique<LevelTwoTransition>());
     this->levels.push_back(std::make_unique<LevelThree>());
-    this->levels.push_back(std::make_unique<LevelThreeFinish>());
+    this->levels.push_back(std::make_unique<LevelThreeTransition>());
     this->levels.push_back(std::make_unique<LevelFour>());
     this->levels.push_back(std::make_unique<EndGame>());
 

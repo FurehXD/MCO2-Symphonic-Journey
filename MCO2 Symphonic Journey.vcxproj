@@ -153,10 +153,10 @@
   <ItemGroup>
     <ClCompile Include="Border\Border.cpp" />
     <ClCompile Include="Level\EndGame\EndGame.cpp" />
-    <ClCompile Include="Level\LevelFourFinish\LevelFourFinish.cpp" />
-    <ClCompile Include="Level\LevelThreeFinish\LevelThreeFinish.cpp" />
-    <ClCompile Include="Level\LevelTwoFinish\LevelTwoFinish.cpp" />
-    <ClCompile Include="Level\LevelOneFinish\LevelOneFinish.cpp" />
+    <ClCompile Include="Level\LevelFourTransition\LevelFourTransition.cpp" />
+    <ClCompile Include="Level\LevelThreeTransition\LevelThreeTransition.cpp" />
+    <ClCompile Include="Level\LevelTwoTransition\LevelTwoTransition.cpp" />
+    <ClCompile Include="Level\LevelOneTransition\LevelOneTransition.cpp" />
     <ClCompile Include="Level\LevelFour\LevelFour.cpp" />
     <ClCompile Include="Level\LevelThree\LevelThree.cpp" />
     <ClCompile Include="Level\LevelTwo\LevelTwo.cpp" />
@@ -174,10 +174,10 @@
   <ItemGroup>
     <ClInclude Include="Border\Border.h" />
     <ClInclude Include="Level\EndGame\EndGame.h" />
-    <ClInclude Include="Level\LevelFourFinish\LevelFourFinish.h" />
-    <ClInclude Include="Level\LevelThreeFinish\LevelThreeFinish.h" />
-    <ClInclude Include="Level\LevelTwoFinish\LevelTwoFinish.h" />
-    <ClInclude Include="Level\LevelOneFinish\LevelOneFinish.h" />
+    <ClInclude Include="Level\LevelFourTransition\LevelFourTransition.h" />
+    <ClInclude Include="Level\LevelThreeTransition\LevelThreeTransition.h" />
+    <ClInclude Include="Level\LevelTwoTransition\LevelTwoTransition.h" />
+    <ClInclude Include="Level\LevelOneTransition\LevelOneTransition.h" />
     <ClInclude Include="Level\LevelFour\LevelFour.h" />
     <ClInclude Include="Level\LevelThree\LevelThree.h" />
     <ClInclude Include="Level\LevelTwo\LevelTwo.h" />

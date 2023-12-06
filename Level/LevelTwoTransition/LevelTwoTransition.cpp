@@ -1,11 +1,11 @@
-#include "LevelThreeFinish.h"
+#include "LevelTwoTransition.h"
 
-LevelThreeFinish::LevelThreeFinish()
+LevelTwoTransition::LevelTwoTransition()
 {
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Winter from the Four Seasons was composed by Antonio Vivaldi.\nHe was an Italian composer born in the sixteen hundreds.\nThe piece 'Winter' is a musical expression that describes the season of winter.\nIt's the last of the four music pieces that make up The Four Seasons.");
+    this->text.setString("Moonlight Sonata was composed by Ludwig van Beethoven.\nIt was composed in the eighteen hundres,\nand this piece was known for its hauntingly beautiful melody\nand stands as one of his widely recognized works.");
     this->text.setPosition(50, 100);
     this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);
@@ -50,17 +50,17 @@ LevelThreeFinish::LevelThreeFinish()
 
 }
 
-void LevelThreeFinish::updatePlayerDrawable(Player& player)
+void LevelTwoTransition::updatePlayerDrawable(Player& player)
 {
     this->playerShape = player.getShape();
     this->playerShape.setPosition(player.getPlayerPos());
 }
-std::vector<sf::Drawable*>& LevelThreeFinish::getDrawables()
+std::vector<sf::Drawable*>& LevelTwoTransition::getDrawables()
 {
     return this->vecDrawables;
 }
 
-void LevelThreeFinish::spawnNotes(int amount)
+void LevelTwoTransition::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
@@ -69,16 +69,16 @@ void LevelThreeFinish::spawnNotes(int amount)
     this->vecCollidables.push_back(note);
 }
 
-void LevelThreeFinish::spawnBorders(int amount)
+void LevelTwoTransition::spawnBorders(int amount)
 {
     //No borders for this level
 }
 
-std::vector<Collidable*>& LevelThreeFinish::getCollidables()
+std::vector<Collidable*>& LevelTwoTransition::getCollidables()
 {
     return this->vecCollidables;
 }
 
-void LevelThreeFinish::playMusicLevel() {
+void LevelTwoTransition::playMusicLevel() {
     PlaySound(TEXT("Assets/Note Sounds/Level.wav"), NULL, SND_ASYNC);
 }
