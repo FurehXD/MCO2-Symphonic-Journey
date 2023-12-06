@@ -2,7 +2,7 @@
 
 Level::Level()
 {
-    this->font.loadFromFile("Assets/Flowers.ttf");
+    this->font.loadFromFile("Assets/bernadette.ttf");
     this->text.setFont(font);
 }
 

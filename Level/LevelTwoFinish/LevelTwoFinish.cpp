@@ -5,8 +5,8 @@ LevelTwoFinish::LevelTwoFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Beethoven lol");
-    this->text.setPosition(440, 200);
+    this->text.setString("Level 3");
+    this->text.setPosition(500, 200);
     this->text.setCharacterSize(72);
     this->text.setFillColor(sf::Color::White);
 
@@ -65,6 +65,7 @@ void LevelTwoFinish::spawnNotes(int amount)
 
     Notes* note = new Notes();
     note->setNotePos(590, 360);
+    note->getNoteSprite().setColor(sf::Color::Yellow);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }
@@ -80,5 +81,5 @@ std::vector<Collidable*>& LevelTwoFinish::getCollidables()
 }
 
 void LevelTwoFinish::playMusicLevel() {
-    PlaySound(TEXT("Assets/moonglightSonata.wav"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/Note Sounds/Level.wav"), NULL, SND_ASYNC);
 }

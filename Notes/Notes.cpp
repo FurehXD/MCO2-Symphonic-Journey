@@ -30,7 +30,7 @@ void Notes::setNotePos(float x, float y)
 
 void Notes::onCollision(Collidable& object)
 {
-	
+
 }
 
 sf::Sprite& Notes::getNoteSprite() {

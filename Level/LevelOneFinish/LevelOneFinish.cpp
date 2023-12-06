@@ -5,9 +5,9 @@ LevelOneFinish::LevelOneFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Beethoven lol");
-    this->text.setPosition(440, 200);
-    this->text.setCharacterSize(72);
+    this->text.setString("Level 1");
+    this->text.setPosition(500, 200);
+    this->text.setCharacterSize(100);
     this->text.setFillColor(sf::Color::White);
 
     Border* leftBorder = new Border();
@@ -65,6 +65,7 @@ void LevelOneFinish::spawnNotes(int amount)
 
     Notes* note = new Notes();
     note->setNotePos(590, 360);
+    note->getNoteSprite().setColor(sf::Color::Red);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }
@@ -80,5 +81,5 @@ std::vector<Collidable*>& LevelOneFinish::getCollidables()
 }
 
 void LevelOneFinish::playMusicLevel() {
-    PlaySound(TEXT("Assets/Fur Elise.wav"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/Note Sounds/Level.wav"), NULL, SND_ASYNC);
 }

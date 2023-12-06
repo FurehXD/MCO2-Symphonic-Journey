@@ -5,6 +5,8 @@
 #include "../Utilities/Collision/Collidable.h"
 #include "iostream"
 #include "../Player/Player.h"
+#include "Windows.h"
+#include "SFML/Audio.hpp"
 
 class Notes : public Collidable
 {
@@ -14,6 +16,9 @@ class Notes : public Collidable
 		sf::Sprite notes;
 		sf::Texture texture;
 		int scoreValue;
+		std::string filePath;
+		
+		
 
 	public:
 		Notes();

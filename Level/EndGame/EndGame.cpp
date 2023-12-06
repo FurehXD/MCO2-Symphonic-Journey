@@ -6,7 +6,7 @@ EndGame::EndGame()
     this->borderAmount = 0;
 
     this->text.setString("Thanks for playing!");
-    this->text.setPosition(440, 200);
+    this->text.setPosition(350, 200);
     this->text.setCharacterSize(72);
     this->text.setFillColor(sf::Color::White);
 
@@ -65,6 +65,7 @@ void EndGame::spawnNotes(int amount)
 
     Notes* note = new Notes();
     note->setNotePos(590, 360);
+    note->getNoteSprite().setColor(sf::Color::White);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }
@@ -80,5 +81,5 @@ std::vector<Collidable*>& EndGame::getCollidables()
 }
 
 void EndGame::playMusicLevel() {
-    PlaySound(TEXT("./Assets/Lilas.mp3"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/Note Sounds/Lilas.wav"), NULL, SND_ASYNC);
 }

@@ -55,6 +55,7 @@ void Player::onCollision(Collidable& object)
         note->setNotePos(-1000, -1000); //Temp need to create delete functionality
         this->score += note->getScoreValue(); //Set score
         this->notesTaken++; //Set Notes Taken
+        note->onCollision(*this);
         std::cout << "Score: " << this->score << std::endl;
         std::cout << "Notes Taken: " << this->notesTaken << std::endl;
     }

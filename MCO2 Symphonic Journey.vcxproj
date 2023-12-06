@@ -147,7 +147,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>D:\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-main.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib;sfml-main.lib;winmm.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -203,10 +203,18 @@
     <Image Include="Assets\wholenote.png" />
   </ItemGroup>
   <ItemGroup>
+    <Font Include="Assets\bernadette.ttf" />
     <Font Include="Assets\Flowers.ttf" />
+    <Font Include="Assets\StolenTimes.otf" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="Assets\Lilas.wav" />
+    <Media Include="Assets\Note Sounds\HalfNote.wav" />
+    <Media Include="Assets\Note Sounds\Level.wav" />
+    <Media Include="Assets\Note Sounds\LevelOne.wav" />
+    <Media Include="Assets\Note Sounds\MainMenu.wav" />
+    <Media Include="Assets\Note Sounds\Note.wav" />
+    <Media Include="Assets\Note Sounds\QuarterNote.wav" />
+    <Media Include="Assets\Note Sounds\WholeNote.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

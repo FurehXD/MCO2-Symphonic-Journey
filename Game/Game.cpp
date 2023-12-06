@@ -11,23 +11,8 @@ void Game::startGame()
     std::cout <<  std::endl;
     this->initialize();
     sf::RenderWindow window(sf::VideoMode(1280, 720), "SFML works!");
-
- /*   sf::Texture texture;
-    sf::Sprite background;
-
-    texture.loadFromFile("../MCO2-Symphonic-Journey/Game/bg1.png");
-
-    background.setTexture(texture);
-
-    sf::Vector2u textureSize = texture.getSize();
-    sf::Vector2u windowSize = window.getSize();
-
-    background.setScale((float)windowSize.x / textureSize.x, (float)windowSize.y / textureSize.y);
-
-    background.setPosition(0, 0);
-    window.draw(background);*/     //tried putting background, didn't work
-
     this->levels[this->currentLevelIndex]->playMusicLevel();
+
     while(window.isOpen())
     {     
         this->update();
@@ -45,7 +30,6 @@ void Game::initialize()
     this->levels.push_back(std::make_unique<LevelThree>());
     this->levels.push_back(std::make_unique<LevelThreeFinish>());
     this->levels.push_back(std::make_unique<LevelFour>());
-    this->levels.push_back(std::make_unique<LevelFourFinish>());
     this->levels.push_back(std::make_unique<EndGame>());
 
     this->currentLevelIndex = 0;

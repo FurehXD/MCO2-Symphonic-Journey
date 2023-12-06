@@ -160,9 +160,29 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\Flowers.ttf" />
+    <Font Include="Assets\StolenTimes.otf" />
+    <Font Include="Assets\bernadette.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="Assets\Lilas.wav">
+    <Media Include="Assets\Note Sounds\LevelOne.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Note Sounds\WholeNote.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Note Sounds\HalfNote.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Note Sounds\Level.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Note Sounds\MainMenu.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Note Sounds\Note.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\Note Sounds\QuarterNote.wav">
       <Filter>Resource Files</Filter>
     </Media>
   </ItemGroup>

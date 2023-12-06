@@ -6,10 +6,10 @@ MainMenu::MainMenu()
     this->borderAmount = 0;
 
     this->text.setString("Symphonic Journey!\nGrab the Note to Start!");
-    this->text.setPosition(350, 200);
+    this->text.setPosition(300, 200);
     this->text.setCharacterSize(72);
     this->text.setFillColor(sf::Color::White);
-    this->text.setLineSpacing(1.5f);
+    this->text.setLineSpacing(4.0f);
 
     Border* leftBorder = new Border();
     leftBorder->setBorderPos(0.0f, 0.0f);
@@ -66,6 +66,7 @@ void MainMenu::spawnNotes(int amount)
 
     Notes* note = new Notes();
     note->setNotePos(590, 360);
+    note->getNoteSprite().setColor(sf::Color::White);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }
@@ -81,5 +82,5 @@ std::vector<Collidable*>& MainMenu::getCollidables()
 }
 
 void MainMenu::playMusicLevel() {
-    PlaySound(TEXT("./Assets/Lilas.mp3"), NULL, SND_ASYNC);
+    PlaySound(TEXT("Assets/Note Sounds/MainMenu.wav"), NULL, SND_ASYNC);
 }
