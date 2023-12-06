@@ -12,6 +12,7 @@
 #include "../Level/LevelThree/LevelThree.h"
 #include "../Level/LevelThreeTransition/LevelThreeTransition.h"
 #include "../Level/LevelFour/LevelFour.h"
+#include "../Level/LevelFourTransition/LevelFourTransition.h"
 #include "../Level/EndGame/EndGame.h"
 #include "../Player/Player.h"
 #include "iostream"

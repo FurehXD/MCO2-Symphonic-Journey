@@ -14,19 +14,6 @@
 
 class LevelThreeTransition : public Level
 {
-private:
-    //Player shape
-    sf::CircleShape playerShape;
-
-    //Walls
-    sf::RectangleShape spTopWall;
-    sf::RectangleShape spBotWall;
-    sf::RectangleShape spLeftWall;
-    sf::RectangleShape spRightWall;
-    std::vector<Notes> vecNotes;
-    std::vector<Border> vecBorders;
-
-
 
 public:
     LevelThreeTransition();

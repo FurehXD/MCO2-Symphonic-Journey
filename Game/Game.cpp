@@ -11,8 +11,8 @@ void Game::startGame()
     std::cout <<  std::endl;
     this->initialize();
     sf::RenderWindow window(sf::VideoMode(1280, 720), "SFML works!");
-    this->levels[this->currentLevelIndex]->playMusicLevel();
 
+    this->levels[this->currentLevelIndex]->playMusicLevel();
     while(window.isOpen())
     {     
         this->update();
@@ -30,6 +30,7 @@ void Game::initialize()
     this->levels.push_back(std::make_unique<LevelThree>());
     this->levels.push_back(std::make_unique<LevelThreeTransition>());
     this->levels.push_back(std::make_unique<LevelFour>());
+    this->levels.push_back(std::make_unique<LevelFourTransition>());
     this->levels.push_back(std::make_unique<EndGame>());
 
     this->currentLevelIndex = 0;

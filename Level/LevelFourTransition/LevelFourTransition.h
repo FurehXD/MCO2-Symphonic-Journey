@@ -14,29 +14,16 @@
 
 class LevelFourTransition : public Level
 {
-private:
-    //Player shape
-    sf::CircleShape playerShape;
 
-    //Walls
-    sf::RectangleShape spTopWall;
-    sf::RectangleShape spBotWall;
-    sf::RectangleShape spLeftWall;
-    sf::RectangleShape spRightWall;
-    std::vector<Notes> vecNotes;
-    std::vector<Border> vecBorders;
+    public:
+        LevelFourTransition();
 
-
-
-public:
-    LevelFourTransition();
-
-    void updatePlayerDrawable(Player& player) override;
-    std::vector<sf::Drawable*>& getDrawables() override;
-    void spawnNotes(int amount) override;
-    void spawnBorders(int amount) override;
-    std::vector<Collidable*>& getCollidables() override;
-    void playMusicLevel() override;
+        void updatePlayerDrawable(Player& player) override;
+        std::vector<sf::Drawable*>& getDrawables() override;
+        void spawnNotes(int amount) override;
+        void spawnBorders(int amount) override;
+        std::vector<Collidable*>& getCollidables() override;
+        void playMusicLevel() override;
 };
 
 #endif
