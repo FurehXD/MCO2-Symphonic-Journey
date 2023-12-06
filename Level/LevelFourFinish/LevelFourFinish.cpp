@@ -5,9 +5,9 @@ LevelFourFinish::LevelFourFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Beethoven lol");
-    this->text.setPosition(440, 200);
-    this->text.setCharacterSize(72);
+    this->text.setString("The Flower Duet was composed by Leo Delibes, a French Composer.\nThis piece was from the opera Lakme where the\ncharacters Lakme and Mallika sing it as they gather flowers by a river\nwhich creates a scene of serene nd idyllic world.");
+    this->text.setPosition(50, 100);
+    this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);
 
     Border* leftBorder = new Border();
@@ -64,7 +64,7 @@ void LevelFourFinish::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
-    note->setNotePos(590, 360);
+    note->setNotePos(1200, 645);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }

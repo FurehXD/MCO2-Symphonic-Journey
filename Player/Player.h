@@ -9,7 +9,6 @@
 #include "../Notes/Notes.h"
 #include "../Border/Border.h"
 
-
 class Player : public Collidable
 {
     private:

@@ -4,9 +4,6 @@
 #include "SFML/Graphics.hpp"
 #include "../Utilities/Collision/Collidable.h"
 #include "iostream"
-#include "../Player/Player.h"
-#include "Windows.h"
-#include "SFML/Audio.hpp"
 
 class Notes : public Collidable
 {

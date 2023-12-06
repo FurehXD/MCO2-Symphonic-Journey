@@ -5,9 +5,9 @@ LevelOneFinish::LevelOneFinish()
     this->noteAmount = 1;
     this->borderAmount = 0;
 
-    this->text.setString("Level 1");
-    this->text.setPosition(500, 200);
-    this->text.setCharacterSize(100);
+    this->text.setString("F�r Elise was composed by Ludwig van Beethoven.\nHe was a German composer and pianist from the eighteenth century.\nHe was widely regarded as one of the greatest composers\ncreating powerful and emotional compositions\nand leaving an enduring impact on classical music.");
+    this->text.setPosition(50, 100);
+    this->text.setCharacterSize(45);
     this->text.setFillColor(sf::Color::White);
 
     Border* leftBorder = new Border();
@@ -64,8 +64,7 @@ void LevelOneFinish::spawnNotes(int amount)
 {
 
     Notes* note = new Notes();
-    note->setNotePos(590, 360);
-    note->getNoteSprite().setColor(sf::Color::Red);
+    note->setNotePos(1200, 645);
     this->vecDrawables.push_back(&note->getNoteSprite());
     this->vecCollidables.push_back(note);
 }
